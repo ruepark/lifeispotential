@@ -19,16 +19,19 @@ class NavBar extends Component {
             <nav id='main-navbar'>
                 <div className='container'>
                     <div className='navbar-header'>
-                        <IndexLink to='/'>life is potential</IndexLink>
+                        <h1 className='title'>
+                            <IndexLink to='/'>life is potential</IndexLink>
+                        </h1>
+                        <ul className='my-navbar'>
+                            <li>
+                                <Link to='/'>Blogs</Link>
+                            </li>
+                            <li>
+                                <Link to='/about'>About</Link>
+                            </li>
+                        </ul>
+                        <div className="line"></div>
                     </div>
-                    <ul className='my-navbar'>
-                        <li>
-                            <Link to='/'>Blogs</Link>
-                        </li>
-                        <li>
-                            <Link to='/about'>About</Link>
-                        </li>
-                    </ul>
                 </div>
             </nav>
         )
