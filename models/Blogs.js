@@ -62,7 +62,7 @@ var Blogs = (function(blogModel) {
       if (result.length > 0) {
         callback(null, result);
       } else {
-        callback({ msg: 'No such blogs!'})
+        callback({ msg: 'No such blogs!'}, null)
       }
     });
   }
